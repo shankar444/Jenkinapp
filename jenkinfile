@@ -3,7 +3,7 @@ node('master')
 {
   stage('continousdownload')
       { 
-          git 'https://github.com/intelliqittrainings/maven.git'
+          git 'https://github.com/shankar444/Jenkinapp.git'
           
       }
   stage('continousbiuld')
