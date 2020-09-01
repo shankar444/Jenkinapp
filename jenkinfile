@@ -18,8 +18,8 @@ node('master')
        }  
     stage('continoustesting')
        {
-           git 'https://github.com/intelliqittrainings/FunctionalTesting.git'
-           
+           git 'https://github.com/shankar444/Testingapp.git'
+
        }  
     stage('continousdelivery')
        {
