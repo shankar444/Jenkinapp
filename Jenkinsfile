@@ -23,7 +23,7 @@ node('master')
        }  
     stage('continousdelivery')
        {
-          
+          input message: 'Give me Permision To Deliver Production', submitter: 'manager'
            sh label: '', script: 'scp /home/ubuntu/.jenkins/workspace/scriptedpipeline/webapp/target/webapp.war ubuntu@172.31.2.111:/var/lib/tomcat9/webapps/prodapp.war'
            
        }  
